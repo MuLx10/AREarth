@@ -134,6 +134,7 @@ a :hover{
   margin: 0 auto;
   min-height: 75vh;
   white-space: normal;
+  margin-left: -25px;
 }
 .app-card-list::-webkit-scrollbar {
   display: none;
