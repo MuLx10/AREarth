@@ -1,0 +1,47 @@
+<head>
+  <style> body { margin: 0; } </style>
+
+  <script src="https://unpkg.com/d3"></script>
+  <script src="https://unpkg.com/polished@3.5.2/dist/polished.js"></script>
+
+  <script src="https://unpkg.com/aframe"></script>
+  <script src="https://unpkg.com/ar.js/aframe/build/aframe-ar.min.js"></script>
+
+  <script src="https://unpkg.com/globe-ar"></script>
+  <!--<script src="../../dist/globe-ar.js"></script>-->
+</head>
+
+<body>
+  <div id="globeViz"></div>
+
+  <script>
+    const URL = "https://31669c3c2b20.ngrok.io";
+    const catColor = d3.scaleOrdinal(d3.schemeCategory10.map(col => polished.transparentize(0.2, col)));
+
+    const getAlt = d => d.elevation * 5e-5;
+
+    const myGlobe = GlobeAR({markerAttrs:{preset:'hiro'}})
+      .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-day.jpg')
+      .pointLat('lat')
+      .pointLng('lon')
+      .pointAltitude(getAlt)
+      .pointRadius(0.12)
+      .pointColor(d => catColor(d.type))
+      .labelLat('lat')
+      .labelLng('lon')
+      .labelAltitude(d => getAlt(d) + 1e-6)
+      .labelDotRadius(0.12)
+      .labelDotOrientation(() => 'bottom')
+      .labelColor(d => catColor(d.type))
+      .labelText('name')
+      .labelSize(0.15)
+      .labelResolution(1)
+      (document.getElementById('globeViz'));
+
+    fetch(URL + '/datasets/world_volcanoes.json').then(res => res.json()).then(volcanoes => {
+      myGlobe.pointsData(volcanoes)
+        .labelsData(volcanoes);
+    });
+
+  </script>
+</body>
