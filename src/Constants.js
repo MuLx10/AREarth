@@ -1,4 +1,4 @@
-const URL = "https://31669c3c2b20.ngrok.io";
+const URL = "https://mulx10.github.io/AREarth/modules";
 
 export  const PostsData = [
   {
