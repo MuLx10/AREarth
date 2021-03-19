@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# AREarth
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](http://www.opidigitalgroup.com/wp-content/uploads/2017/05/ar-earth.jpg)
 
-## Available Scripts
+AREarth is a cross platform web app that can be used for students/professional to interactively learn about the environmental/geographical processes, that creates awareness about the worldwide effects of climate change through interactive storytelling, in ways that are more engaging and persuasive than standard approaches.
 
-In the project directory, you can run:
+## Install & Run
 
-### `yarn start`
+### Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- npm
+- nodejs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Build
 
-### `yarn test`
+```bash
+ $ git clone 
+ $ cd AREarth
+ $ yarn install
+```
+### Run
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+ $ yarn start
+```
+and point your favourite browser to [localhost:3000](http://localhost:3000)
 
-### `yarn build`
+or use our live demo [here](https://mulx10.github.io/AREarth/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Open the [page](https://mulx10.github.io/AREarth/) both in your phone and PC.
+- Toggle the target image on the PC screen 💻.
+- Scan the target image via your phone that's being displayed on the PC screen  .
+- It will open the WebAR/VR experience (on any device) 📱 .
+- Enjoy 😉 !
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Inspiration
+Climate change, global warming, deforestation, and extinction are all on the global agenda at any given moment. 
+It is generally acknowledged that global action is needed to resolve some of the most serious environmental issues exacerbated by human activity's adverse effects.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+AR/VR in particular, has the potential to contribute to sustainability both directly by making certain processes sustainable, and indirectly by encouraging people to adopt more sustainable lifestyles. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The inherent immersiveness of VR combined with the realism of AR can help us connect with people at a visceral level, thereby highlighting the importance of sustainable living.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## What it does
+AREarth is a cross platform web app that can be used for students/professional to interactively learn about the environmental/geographical processes, that helps to educate people about the worldwide effects of climate change through interactive storytelling, in ways that are more engaging and persuasive than standard approaches.
 
-## Learn More
+## How we built it
+The project is built using `AR.js` which helps to develop cross platform Web AR/VR experience. The reason for choosing `AR.js` is it's
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Very fast
+- Built on Web
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The front end is built using `react.js`. It is hosted on github pages for live demo.
 
-### Code Splitting
+## Challenges we ran into
+Being new to AR the terminologies were difficult to understand, however articles and tutorials helped me to uvercome the difficulties. Hosting the web demo was a little hustle, however github pages came to my rescue.  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Accomplishments that we're proud of
+We are super happy and proud that we could bring our idea of using AR in creating environmental awareness. We were so happy that we made a whole finished product.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## What we learned
+Being new to AR , it was difficult to understand the theory and working principles of AR/VR technology. However this project helped in understanding the underlying concepts. What was magic for me a days ago is now science 😛.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## What's next for AREarth
+Currently it uses stored data of various environmental conditions/location. Streaming live data from around the globe is the next great thing happening for **AREarth**.
 
-### Advanced Configuration
+Besides that it will also support virtual scene/location viewing (e.g. Viewing the amazon rain forest).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for reading 😄 
