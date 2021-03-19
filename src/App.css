@@ -16,6 +16,15 @@ a :hover{
   cursor: pointer;
 
 }
+.modal-header{
+  background-color: #3c3c3c;
+}
+.modal-title{
+  color: #fff;
+}
+.modal-body, .modal-footer{
+  background-color: #2c2c2c;
+}
 .card {
   width:90%;
   max-width: 350px;
@@ -32,7 +41,7 @@ a :hover{
 }
 
 .card-header {
-  height: 150px;
+  min-height: 150px;
   width: 100%;
   padding: 15px;
   width: 100%;
@@ -49,6 +58,8 @@ a :hover{
   padding: 15px;
   background-color: #fff;
   width: 100%;
+  min-height: 150px;
+  max-height: 400px;
 }
 
 .date {

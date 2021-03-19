@@ -1,4 +1,5 @@
-const URL = "https://mulx10.github.io/AREarth/modules";
+export const URL = "https://mulx10.github.io/AREarth/modules";
+// const URL = "5https://mulx10.github.io/AREarth/modules";
 
 export  const PostsData = [
   {

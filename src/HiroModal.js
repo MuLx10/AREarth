@@ -2,12 +2,14 @@ import React from 'react';
 import {Button, Modal} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import {isMobile} from 'react-device-detect';
+// import {URL} from './Constants';
 
 export default class HiroModal extends React.Component {
 	constructor(props){
     super(props);
     this.state = {
-    	open:false,
+    	open:!isMobile,
     }
   }
 
@@ -20,13 +22,15 @@ export default class HiroModal extends React.Component {
   }
 
   render() {
+
+    // const image = URL+"/images/earth.png";
     const image = "https://raw.githubusercontent.com/AR-js-org/AR.js/master/data/images/hiro.png";
     
     return (
 			<div className="container">
 			  
-			  <Button variant="primary" onClick={this.handleShow.bind(this)}>
-        Show Target
+			<Button variant="primary" onClick={this.handleShow.bind(this)}>
+        Toggle Target
       </Button>
 
       <Modal
@@ -45,7 +49,7 @@ export default class HiroModal extends React.Component {
 	          </div>
 	        </Modal.Body>
 	        <Modal.Footer>
-	          <Button variant="secondary" onClick={this.handleClose.bind(this)}>
+	          <Button variant="danger" onClick={this.handleClose.bind(this)}>
 	            Close
 	          </Button>
 	        </Modal.Footer>

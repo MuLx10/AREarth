@@ -8,7 +8,7 @@ export default class Home extends React.Component {
   constructor() {
     super();
     this.state = {
-      posts: {}
+      posts: {},
     }
   }
   componentWillMount() {
@@ -22,16 +22,16 @@ export default class Home extends React.Component {
 
     return <div className="container">
       <header className="app-header"></header>
-      <Title />
-      <div className="app-card-list" id="app-card-list">
-        <div className="container">
-          {
-            Object
-            .keys(this.state.posts)
-            .map(key => <Card key={key} index={key} details={this.state.posts[key]}/>)
-          }
+        <Title/>
+        <div className="app-card-list" id="app-card-list">
+          <div className="container">
+            {
+              Object
+              .keys(this.state.posts)
+              .map(key => <Card key={key} index={key} details={this.state.posts[key]}/>)
+            }
+          </div>
         </div>
-      </div>
     </div>
   }
 }
@@ -43,7 +43,7 @@ class Title extends React.Component {
       <div className="app-title-content">
         <h1>Hack Reality</h1>
         <p>AR app for exploring the Earth</p>
-        <HiroModal/>
+        <HiroModal />
       </div>
     </section>
   }

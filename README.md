@@ -2,7 +2,7 @@
 
 ![](http://www.opidigitalgroup.com/wp-content/uploads/2017/05/ar-earth.jpg)
 
-AREarth is a cross platform web app that can be used for students/professional to interactively learn about the environmental/geographical processes, that creates awareness about the worldwide effects of climate change through interactive storytelling, in ways that are more engaging and persuasive than standard approaches.
+AREarth is a cross platform app that can be used for students/professional to interactively learn about the environmental processes to creates awareness about the worldwide effects of climate change through interactive storytelling, in ways that are more engaging and persuasive than standard approaches.
 
 ## Install & Run
 
